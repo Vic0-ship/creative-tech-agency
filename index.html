@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Tech Acceleration Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<!-- Hero Heading with Glow Box -->
+<div class="hero-heading">
+    <h1>Creative Tech Acceleration Agency</h1>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <p class="hero-text">
+        Accelerating innovative tech projects into scalable businesses with speed, style, and strategy.
+We partner with founders, creators, and forward-thinking teams to transform bold ideas into structured, market-ready solutions. From concept to execution, we combine technology, creative direction, and data-driven strategy to build systems that don’t just launch — they scale, perform, and lead.
+    </p>
+    <a href="#contact" class="hero-btn">Work With Us</a>
+</div>
+<!-- Main Container for Sections -->
+<div class="container">
+   <!-- OUR MISSION -->
+<section class="our-mission">
+  <h2>Our Mission</h2>
+  <p>
+    We accelerate innovation and empower entrepreneurs with cutting-edge technology solutions. 
+    Our goal is to help emerging ventures scale efficiently while maintaining a focus on creativity and strategic growth.
+  </p>
+</section>
+<div class="background-cube" style="top: 20px; right: 40px;"></div>
+  <div class="container">
+    <!-- Card 1 -->
+    <div class="mission-card">
+      <img src="innovation.jpg" alt="Innovation Image" class="mission-img">
+      <div class="mission-content">
+        <h2>Accelerate Innovation</h2>
+        <p>At Creative Tech, we accelerate innovation by transforming cutting-edge ideas into scalable solutions. Our team works at the intersection of technology, creativity, and business insight to deliver real-world impact.</p>
+        <p>We empower entrepreneurs to think bigger, move faster, and achieve tangible results with precision and strategy. Every project is a step toward a smarter, faster, more innovative future.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="mission-card">
+      <img src="empower.jpg" alt="Empower Entrepreneurs Image" class="mission-img">
+      <div class="mission-content">
+        <h2>Empower Entrepreneurs</h2>
+        <p>We believe in nurturing talent and providing the tools and guidance necessary to help entrepreneurs succeed. From ideation to execution, we offer mentorship, resources, and strategy to ensure growth.</p>
+        <p>Our goal is to create a thriving ecosystem where creative minds can flourish, innovate, and make meaningful contributions to the tech world.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="mission-card">
+      <img src="results.jpg" alt="Deliver Results Image" class="mission-img">
+      <div class="mission-content">
+        <h2>Deliver Results</h2>
+        <p>We are driven by measurable outcomes and impact. Every initiative is designed to produce real results, from improving operational efficiency to scaling startups globally.</p>
+        <p>Our mission is simple: transform potential into performance, turning innovative ideas into successful realities.</p>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- What We Do Section -->
+<section class="section-whatwedo">
+  <div class="background-cube" style="top: 20px; right: 40px;"></div>
+  <div class="container">
+    <h2 data-reveal>What We Do</h2>
+    <div class="cards-wrapper">
+      <div class="wwd-card" data-reveal>
+        <img src="tech-consulting.jpg" alt="Tech Consulting">
+        <div class="card-content">
+          <h3>Tech Consulting</h3>
+          <p>We guide startups and entrepreneurs to craft technology strategies that scale and perform.</p>
+        </div>
+      </div>
+      <div class="wwd-card" data-reveal>
+        <img src="product-design.jpg" alt="Product Design">
+        <div class="card-content">
+          <h3>Product Design</h3>
+          <p>From wireframes to final UI, we design products that are beautiful, usable, and functional.</p>
+        </div>
+      </div>
+      <div class="wwd-card" data-reveal>
+        <img src="growth-strategy.jpg" alt="Growth Strategy">
+        <div class="card-content">
+          <h3>Growth Strategy</h3>
+          <p>We implement actionable plans that boost engagement, user acquisition, and revenue growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="section-whychoose">
+  <div class="background-cube" style="top: 20px; right: 40px;"></div>
+  <div class="container">
+    <h2 data-reveal>Why Choose Us</h2>
+    <div class="cards-wrapper">
+      <div class="why-card" data-reveal>
+        <h3>Expert Team</h3>
+        <p>Our team has experience across multiple industries and technologies, delivering excellence consistently.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <h3>Fast Execution</h3>
+        <p>We take ideas from concept to implementation faster than traditional agencies.</p>
+      </div>
+      <div class="why-card" data-reveal>
+        <h3>Proven Results</h3>
+        <p>Our portfolio shows measurable growth and successful launches for our clients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Us Section -->
+<section class="section-contact">
+  
+  <div class="container">
+    <h2 data-reveal>Contact Us</h2>
+    <p data-reveal>Want to work with us? Reach out via email or phone. We’d love to hear from you!</p>
+    <ul class="contact-list">
+      <li data-reveal>Email: <a href="mailto:torries088@gmail.com">torries088@gmail.com</a></li>
+      <li data-reveal>Phone: <a href="tel:+2347079567577">+234 707 956 7577</a></li>
+      <li data-reveal>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your Profile</a></li>
+      <li data-reveal>Instagram: <a href="https://www.instagram.com/vic3_065?igsh=enEycW1xcWs0a25l&utm_source=qr" target="_blank">@vic3_065</a></li>
+    </ul>
+  </div>
+</section>
+<script>
+const reveals = document.querySelectorAll('[data-reveal]');
+
+function revealOnScroll() {
+  const triggerBottom = window.innerHeight * 0.9; // when 90% of viewport
+
+  reveals.forEach(reveal => {
+    const top = reveal.getBoundingClientRect().top;
+
+    if(top < triggerBottom){
+      reveal.classList.add('active');
+    } else {
+      reveal.classList.remove('active'); // disappears when scrolling up
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll(); // trigger once on load
+</script>  
+</body>
+</html>

@@ -1,0 +1,394 @@
+/* Reset default browser spacing */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000f7; /* dark luxury gray */
+    font-family: Arial, sans-serif;
+    color: #e0e0e0; /* soft light gray text */
+}
+
+/* Container controls width and spacing */
+.container {
+    max-width: 900px;   /* prevents text from stretching too wide */
+    margin: 0 auto;     /* centers content horizontally */
+    padding: 30px 20px; /* space inside container */
+}
+
+/* Main Heading */
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Section
+h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: #1367ba; /* subtle neon accent */
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.7;  /* space between lines */
+    font-size: 16px;
+    color: #cfcfcf;
+}
+/* Container controls width and spacing */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* HERO SECTION */
+.hero-heading {
+    background-color: #0A0A1A; /* dark base */
+    display: inline-block;
+    padding: 25px 50px;
+    margin: 50px auto 30px auto;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff; /* text stays white, no glow */
+
+    /* Multi-layered purple + pink glow behind box */
+    box-shadow: 
+        0 0 5px white, 
+        0 0 15px #eeb6ff,   /* light pink */
+        0 0 30px #cb69ff,   /* medium pink */
+        0 0 50px #9515c7,   /* dark pink */
+        0 0 5px #ccbfd8,    /* light purple */
+        0 0 15px #441051,   /* medium purple */
+        0 0 30px #2f0080,   /* deep purple */
+        0 0 60px #39049a;   /* outer purple glow */
+
+    /* Animation */
+    animation: pulseGlow 4s infinite ease-in-out;
+}
+
+/* Glow Animation Keyframes */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 
+            0 0 5px white, 0 0 15px #ccbfd8, 0 0 30px #cb69ff, 0 0 50px #9515c7,
+            0 0 5px #D8BFD8, 0 0 15px #441051, 0 0 30px #2f0080, 0 0 60px #39049a;
+    }
+    50% {
+        box-shadow: 
+            0 0 10px white, 0 0 20px #ccbfd8, 0 0 40px #cb69ff, 0 0 70px #9515c7,
+            0 0 10px #D8BFD8, 0 0 20px #441051, 0 0 40px #2f0080, 0 0 80px #39049a;
+    }
+    100% {
+        box-shadow: 
+            0 0 5px white, 0 0 15px #ccbfd8, 0 0 30px #cb69ff, 0 0 50px #9515c7,
+            0 0 5px #D8BFD8, 0 0 15px #441051, 0 0 30px #2f0080, 0 0 60px #39049a;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.hero-text {
+    font-size: 22px;
+    color: #cfcfcf;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #842BE2;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 15px #5a24ed;
+    
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #5a24ed, 0 0 50px #5a24ed;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    color: #842BE2;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #cfcfcff3;
+}
+/* Our Mission Section */
+.section-mission {
+  background-color: #0a0a0a;
+  padding: 40px 20px;
+}
+
+.section-mission .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-card {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.mission-card:hover,
+.mission-card:active {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 180, 255, 0.3), 0 0 25px rgba(0, 180, 255, 0.2);
+}
+
+.mission-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #222;
+}
+
+.mission-content {
+  padding: 20px;
+  color: #eee;
+}
+
+.mission-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.mission-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* What We Do Section */
+.section-whatwedo, .section-whychoose, .section-contact {
+  background-color: #0a0a0a;
+  color: #eee;
+  padding: 30px 20px;
+}
+
+.section-whatwedo h2, .section-whychoose h2, .section-contact h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7f5af0; /* Slight purple for headers */
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwd-card, .why-card {
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.wwd-card:hover, .why-card:hover,
+.wwd-card:active, .why-card:active {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(127, 90, 240, 0.3), 0 0 25px rgba(127, 90, 240, 0.2);
+}
+
+.wwd-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #222;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Contact Section */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list a {
+  color: #7f5af0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #00bfff;
+}
+
+/* Scroll Reveal */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal].active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal] {
+  opacity: 0;                     /* invisible initially */
+  transform: translateY(20px);    /* slight downward offset */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* smooth animation */
+}
+
+[data-reveal].active {
+  opacity: 1;                     /* visible */
+  transform: translateY(0);       /* move to original position */
+}
+
+/* ========================= */
+/* Background Cube Effect */
+/* ========================= */
+
+.section {
+  position: relative;   /* required so cube stays inside section */
+  overflow: hidden;     /* prevents cube from creating extra scroll */
+}
+
+.background-cube {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #914cb1, #4e2c6f);
+  opacity: 0.06;
+  transform: rotate(25deg);
+  border-radius: 20px;
+  filter: blur(40px);
+  z-index: 1;
+}
+
+/* Optional second cube variation */
+.background-cube.small {
+  width: 100px;
+  height: 100px;
+  opacity: 0.05;
+}
+
+/* Sparkles container covering the whole page */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(2px 2px, rgba(255,255,255,0.7) 50%, transparent 51%) repeat;
+  background-size: 20px 20px;
+  animation: sparkleDrift 60s linear infinite;
+}
+
+/* Animation to slowly drift the sparkles diagonally */
+@keyframes sparkleDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+/* Reduce gap under hero section */
+.hero {
+  padding-bottom: 10px; /* shrink bottom space */
+}
+
+/* Shrink extra space under hero content/button */
+.hero-content {
+  margin-bottom: 0px;
+}
+
+/* Mission section spacing */
+.our-mission {
+  margin-top: 10px; /* reduce top margin to bring it closer */
+  padding: 20px 20px; /* keeps some spacing inside section */
+}
+
+.our-mission h2 {
+  display: block; /* ensure it's visible */
+  font-size: 1.8rem;
+  color: #7b5fcf; /* make sure the color contrasts the background */
+  margin-bottom: 10px; /* space below heading, can tweak */
+}
+
+.our-mission p {
+  font-size: 1rem;
+  color: #eee; /* visible text */
+  line-height: 1.5;
+}
+
+/* Our Mission Section */
+.our-mission {
+  margin-top: 10px; /* reduce space from previous section */
+  padding: 20px; 
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-mission h2 {
+  display: block;           /* ensure it’s visible */
+  font-size: 2rem;          /* bigger for visibility */
+  color: #ffffff;           /* white text on dark background */
+  text-align: center;       /* optional: center heading */
+  margin-bottom: 15px;      /* space below heading */
+}
+
+.our-mission p {
+  font-size: 1rem;
+  color: #e0e0e0;           /* lighter for readability */
+  line-height: 1.5;
+  text-align: center;       /* optional: center paragraph */
+}
